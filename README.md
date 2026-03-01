@@ -50,8 +50,10 @@ Telegram (уведомление, если релевантно)
 mosling-bot/
 ├── src/
 │   └── main.js          # Основной скрипт
+│   └── main.py          # Скрипт для запуска на Python
 ├── README.md            # Этот файл
 ├── SETUP.md             # Подробная инструкция по установке
+├── PYTHON_SETUP.md      # Инструкция по установке (Python версия)
 ├── CONFIGURATION.md     # Настройка интересов и параметров
 └── LICENSE              # MIT License
 ```
