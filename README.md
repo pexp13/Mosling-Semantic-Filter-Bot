@@ -1,6 +1,6 @@
 # 📬 Mosling Semantic Filter Bot
 
-Автоматический фильтр писем из рассылки [mosling](https://groups.google.com/g/mosling) с семантическим анализом через Gemini AI и уведомлениями в Telegram.
+Автоматический фильтр писем из рассылки [mosling](https://groups.google.com/g/mosling) с семантическим анализом через Llama 3.3 70B и уведомлениями в Telegram.
 
 Скрипт работает на **Google Apps Script** — бесплатно, без сервера, полностью автоматически.
 
@@ -13,7 +13,7 @@ Gmail (письма от mosling)
         ↓
 Google Apps Script (раз в час)
         ↓
-Gemini API (семантический анализ)
+Groq API — Llama 3.3 70B (семантический анализ)
         ↓
 Telegram (уведомление, если релевантно)
 ```
@@ -26,7 +26,7 @@ Telegram (уведомление, если релевантно)
 
 - Аккаунт Google (Gmail)
 - Telegram-аккаунт
-- Gemini API key (бесплатно, без карты)
+- Groq API key (бесплатно, без карты)
 
 ---
 
@@ -36,11 +36,11 @@ Telegram (уведомление, если релевантно)
 
 Краткий план:
 1. Создать Telegram-бота через @BotFather
-2. Получить Gemini API key на [aistudio.google.com](https://aistudio.google.com)
+2. Получить Groq API key на console.groq.com
 3. Открыть [script.google.com](https://script.google.com) и создать новый проект
 4. Вставить код из `src/main.js`
 5. Заполнить переменные в начале файла
-6. Настроить триггер (раз в час)
+6. Настроить триггер (раз в час или больше/меньше)
 
 ---
 
